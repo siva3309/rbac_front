@@ -11,7 +11,7 @@ function Register() {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        await axios.post('http://localhost:8081/auth/register', { username, password, role });
+        await axios.post('https://rbac-latest-4.onrender.com/register', { username, password, role });
         
         window.location.href = '/login';
 
